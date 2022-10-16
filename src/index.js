@@ -54,7 +54,7 @@ function createMarkupCard(arr) {
       <img class="country-img" src="${flags.svg}" alt="${
     name.common
   }" width="75" height="auto"/>
-      <p class="country-name">${name.official}</p></div>
+      <p class="country-name">${name.common}</p></div>
           <ul class="country-list">
           <li><p><span>Capital: </span>${capital}</p></li>
           <li><p><span>Population: </span>${population}</p></li>
@@ -67,7 +67,7 @@ function createMarkupList(arr) {
     .map(item => {
       return `<li class="country-item">
       <img class="country-item-img" src="${item.flags.svg}" alt="${item.name.common}" width="50"/>
-      <p class="country-name-title">${item.name.official}</p></li>`;
+      <p class="country-name-title">${item.name.common}</p></li>`;
     })
     .join('');
 }
