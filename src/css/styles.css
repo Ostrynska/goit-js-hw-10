@@ -97,6 +97,10 @@ p {
   font-size: 22px;
 }
 
+li:last-of-type {
+  margin-bottom: 0;
+}
+
 p>span {
   font-weight: 700;
 }
